@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fashion Classifier</title>
+</head>
+
+<body>
+
+    <h1>Fashion Image Classification</h1>
+
+    <form action="/predict" method="POST"
+          enctype="multipart/form-data">
+
+        <input type="file" name="file">
+
+        <button type="submit">
+            Predict
+        </button>
+
+    </form>
+
+    {% if prediction %}
+
+        <h2>
+            Prediction: {{ prediction }}
+        </h2>
+
+        <img src="{{ img_path }}"
+             width="300">
+
+    {% endif %}
+
+</body>
+
+</html>
