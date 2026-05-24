@@ -45,6 +45,7 @@ Fashion_Image_Classification/
 ├── app.py
 ├── train_model.ipynb
 ├── index.html
+├── requirements.txt
 ├── styles.csv
 ├── README.md
 └── model/
